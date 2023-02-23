@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraTracker : MonoBehaviour
+namespace TLOU2D.game
 {
-    [SerializeField] private Transform player;
-
-    // Update is called once per frame
-    private void Update()
+    public class CameraTracker : MonoBehaviour
     {
-        transform.position = new Vector3(player.position.x, player.position.y, player.position.z - 10);
+        [SerializeField] private Transform player;
+
+        // Update is called once per frame
+        private void Update()
+        {
+            transform.position = new Vector3(player.position.x, player.position.y, player.position.z - 10);
+        }
     }
 }
