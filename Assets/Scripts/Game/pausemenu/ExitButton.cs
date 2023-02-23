@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TLOU2D.game.pausemenu
 {
     public class ExitButton : MonoBehaviour
     {
-        public void ExitGame()
+        public void Exit()
         {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+            SceneManager.LoadScene(0);
         }
     }
 }

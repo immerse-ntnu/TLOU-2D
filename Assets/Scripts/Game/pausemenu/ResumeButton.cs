@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 namespace TLOU2D.game.pausemenu
 {
-    public class PlayButton : MonoBehaviour
+    public class ResumeButton : MonoBehaviour
     {
-        public void PlayGame()
+        public GameObject canvas;
+        public void ResumeGame()
         {
-            SceneManager.LoadScene(1);
+            canvas.SetActive(false);
         }
     }
 }
