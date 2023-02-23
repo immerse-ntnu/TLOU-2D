@@ -13,7 +13,7 @@ namespace TLOU2D.game {
             _body = GetComponent<Rigidbody2D>();
         }
 
-        void Update()
+        void FixedUpdate()
         {
             float dirX = Input.GetAxisRaw("Horizontal");
             float dirY = Input.GetAxisRaw("Vertical");

@@ -8,9 +8,11 @@ namespace TLOU2D.game.pausemenu
     public class ResumeButton : MonoBehaviour
     {
         public GameObject canvas;
+        
         public void ResumeGame()
         {
             canvas.SetActive(false);
+            World.INSTANCE.pauseWorld(false);
         }
     }
 }
