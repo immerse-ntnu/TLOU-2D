@@ -9,6 +9,7 @@ TagManager:
   - Chest
   - Pants
   - Boots
+  - EnemyTest
   layers:
   - Default
   - TransparentFX
