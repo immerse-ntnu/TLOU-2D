@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TLOU2D.game.world;
 using UnityEngine;
 namespace TLOU2D.game.pausemenu{
     public class PauseMenuScript : MonoBehaviour

@@ -20,8 +20,7 @@ namespace TLOU2D.game {
         {
             float dirX = Input.GetAxisRaw("Horizontal");
             float dirY = Input.GetAxisRaw("Vertical");
-            _body.velocity = new Vector2(dirX * movementSpeed, _body.velocity.y);
-            _body.velocity = new Vector2( _body.velocity.x, dirY * movementSpeed); 
+            _body.velocity = new Vector2(dirX, dirY).normalized * movementSpeed;
         }
         
         private void OnTriggerEnter2D(Collider2D col)
